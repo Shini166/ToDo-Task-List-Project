@@ -124,9 +124,9 @@ function removeTaskFromLocalStorage(taskItem)
 
 function clearTasks(e)
 {
-    
-    taskList.innerHTML='';
-   localStorage.clear();
+    if(confirm("Are You Sure ?"))
+    {taskList.innerHTML='';
+   localStorage.clear();}
 }
 
 function filterTasks(e)
